@@ -1,7 +1,7 @@
 { "name": "node-example",
   "version": "0.0.1",
   "dependencies": {
-    "express": "4.16.2" 
+    "express": "3.1.x" 
   }, 
     "engines": { "node": "6.11.3", 
     "npm": "3.10.10" 
