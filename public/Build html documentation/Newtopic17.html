@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.4.0.395">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>декоратор</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="декоратор">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="декоратор" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Паттерны проектирования" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Паттерны проектирования</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Newtopic17"
+		  data-hnd-context="4"
+		  data-hnd-title="декоратор"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Newtopic3.html">Структурные паттерны</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Newtopic3.html" title="Структурные паттерны" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Newtopic3.html" title="Структурные паттерны" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Newtopic18.html" title="Адаптер" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>декоратор</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps35"><span class="rvts49">Д</span><span class="rvts43">екоратор (Decorator) представляет структурный шаблон проектирования, который позволяет динамически подключать к объекту дополнительную функциональность.</span></p>
+<p class="rvps35"><span class="rvts43">Для определения нового функционала в классах нередко используется наследование. Декораторы же предоставляет наследованию более гибкую альтернативу, поскольку позволяют динамически в процессе выполнения определять новые возможности у объектов.</span></p>
+<h3 class="rvps39"><span class="rvts0"><span class="rvts44">Когда следует использовать декораторы?</span></span></h3>
+<p class="rvps35"><span class="rvts43">Когда надо динамически добавлять к объекту новые функциональные возможности. При этом данные возможности могут быть сняты с объекта</span></p>
+<p class="rvps35"><span class="rvts43">Когда применение наследования неприемлемо. Например, если нам надо определить множество различных функциональностей и для каждой функциональности наследовать отдельный класс, то структура классов может очень сильно разрастись. Еще больше она может разрастись, если нам необходимо создать классы, реализующие все возможные сочетания добавляемых функциональностей.</span></p>
+<p class="rvps35"><span class="rvts43">Схематически шаблон "Декоратор" можно выразить следующим образом:</span></p>
+<p class="rvps35"><img width="750" height="358" alt="" style="padding : 1px;" src="lib/decorator.png"></p>
+<h3 class="rvps39"><span class="rvts0"><span class="rvts44">Участники</span></span></h3>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps38"><span class="rvts45">Component</span><span class="rvts43">: абстрактный класс, который определяет интерфейс для наследуемых объектов</span></li>
+<li class="rvps38"><span class="rvts45">ConcreteComponent</span><span class="rvts43">: конкретная реализация компонента, в которую с помощью декоратора добавляется новая функциональность</span></li>
+<li class="rvps38"><span class="rvts45">Decorator</span><span class="rvts43">: собственно декоратор, реализуется в виде абстрактного класса и имеет тот же базовый класс, что и декорируемые объекты. Поэтому базовый класс Component должен быть по возможности легким и определять только базовый интерфейс.</span></li>
+</ul>
+<p class="rvps38"><span class="rvts43">Класс декоратора также хранит ссылку на декорируемый объект в виде объекта базового класса Component и реализует связь с базовым классом как через наследование, так и через отношение агрегации.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps38"><span class="rvts43">Классы&nbsp;</span><span class="rvts45">ConcreteDecoratorA</span><span class="rvts43">&nbsp;и&nbsp;</span><span class="rvts45">ConcreteDecoratorB</span><span class="rvts43">&nbsp;представляют дополнительные функциональности, которыми должен быть расширен объект ConcreteComponent.</span></li>
+</ul>
+<p class="rvps35"><span class="rvts43">Рассмотрим пример. Допустим, у нас есть пиццерия, которая готовит различные типы пицц с различными добавками. Есть итальянская, болгарская пиццы. К ним могут добавляться помидоры, сыр и т.д. И в зависимости от типа пицц и комбинаций добавок пицца может иметь разную стоимость. Теперь посмотрим, как это изобразить в программе на C#:</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Program</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Main(</span><span class="rvts28">string</span><span class="rvts30">[] args)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Pizza pizza1 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">ItalianPizza();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">pizza1 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">TomatoPizza(pizza1); </span><span class="rvts47">// итальянская пицца с томатами</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Название: {0}"</span><span class="rvts30">, pizza1.Name);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Цена: {0}"</span><span class="rvts30">, pizza1.GetCost());</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Pizza pizza2 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">ItalianPizza();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">pizza2 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">CheesePizza(pizza2);</span><span class="rvts47">// итальянская пиццы с сыром</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Название: {0}"</span><span class="rvts30">, pizza2.Name);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Цена: {0}"</span><span class="rvts30">, pizza2.GetCost());</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Pizza pizza3 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">BulgerianPizza();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">pizza3 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">TomatoPizza(pizza3);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">pizza3 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">CheesePizza(pizza3);</span><span class="rvts47">// болгарская пиццы с томатами и сыром</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Название: {0}"</span><span class="rvts30">, pizza3.Name);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Цена: {0}"</span><span class="rvts30">, pizza3.GetCost());</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.ReadLine();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts28">abstract</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Pizza</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">Pizza(</span><span class="rvts28">string</span><span class="rvts29"> </span><span class="rvts30">n)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">this</span><span class="rvts30">.Name = n;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">string</span><span class="rvts29"> </span><span class="rvts30">Name {</span><span class="rvts28">get</span><span class="rvts30">; </span><span class="rvts28">protected</span><span class="rvts29"> </span><span class="rvts28">set</span><span class="rvts30">;}</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">abstract</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> </span><span class="rvts30">GetCost();</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">ItalianPizza : Pizza</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">ItalianPizza() : </span><span class="rvts28">base</span><span class="rvts30">(</span><span class="rvts32">"Итальянская пицца"</span><span class="rvts30">)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{ }</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">override</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> </span><span class="rvts30">GetCost()</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">return</span><span class="rvts29"> </span><span class="rvts30">10;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">BulgerianPizza : Pizza</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">BulgerianPizza()</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">: </span><span class="rvts28">base</span><span class="rvts30">(</span><span class="rvts32">"Болгарская пицца"</span><span class="rvts30">)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{ }</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">override</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> </span><span class="rvts30">GetCost()</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">return</span><span class="rvts29"> </span><span class="rvts30">8;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts28">abstract</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">PizzaDecorator : Pizza</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">protected</span><span class="rvts29"> </span><span class="rvts30">Pizza pizza;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">PizzaDecorator(</span><span class="rvts28">string</span><span class="rvts29"> </span><span class="rvts30">n, Pizza pizza) : </span><span class="rvts28">base</span><span class="rvts30">(n)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">this</span><span class="rvts30">.pizza = pizza;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TomatoPizza : PizzaDecorator</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">TomatoPizza(Pizza p) </span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">: </span><span class="rvts28">base</span><span class="rvts30">(p.Name + </span><span class="rvts32">", с томатами"</span><span class="rvts30">, p)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{ }</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">override</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> </span><span class="rvts30">GetCost()</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">return</span><span class="rvts29"> </span><span class="rvts30">pizza.GetCost() + 3;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">CheesePizza : PizzaDecorator</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">CheesePizza(Pizza p)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">: </span><span class="rvts28">base</span><span class="rvts30">(p.Name + </span><span class="rvts32">", с сыром"</span><span class="rvts30">, p)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{ }</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">override</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> </span><span class="rvts30">GetCost()</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">return</span><span class="rvts29"> </span><span class="rvts30">pizza.GetCost() + 5;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30"><br/></span></p>
+<p class="rvps35"><span class="rvts43">В качестве компонента здесь выступает абстрактный класс Pizza, который определяет базовую функциональность в виде свойства Name и метода&nbsp;</span><span class="rvts46">GetCost()</span><span class="rvts43">. Эта функциональность реализуется двумя подклассами ItalianPizza и BulgerianPizza, в которых жестко закодированы название пиццы и ее цена.</span></p>
+<p class="rvps35"><span class="rvts43">Декоратором является абстрактный класс PizzaDecorator, который унаследован от класса Pizza и содержит ссылку на декорируемый объект Pizza. В отличие от формальной схемы здесь установка декорируемого объекта происходит не в методе SetComponent, а в конструкторе.</span></p>
+<p class="rvps35"><span class="rvts43">Отдельные функциональности - добавление томатов и сыры к пиццам реализованы через классы TomatoPizza и CheesePizza, которые обертывают объект Pizza и добавляют к его имени название добавки, а к цене - стоимость добавки, то есть переопределяя метод GetCost и изменяя значение свойства Name.</span></p>
+<p class="rvps35"><span class="rvts43">Благодаря этому при создании пиццы с добавками произойдет ее обертывание декоратором:</span></p>
+<p class="rvps36"><span class="rvts30">Pizza pizza3 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">BulgerianPizza();</span></p>
+<p class="rvps36"><span class="rvts30">pizza3 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">TomatoPizza(pizza3);</span></p>
+<p class="rvps36"><span class="rvts30">pizza3 = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">CheesePizza(pizza3);</span></p>
+<p class="rvps36"><span class="rvts30"><br/></span></p>
+<p class="rvps35"><span class="rvts43">Сначала объект BulgerianPizza обертывается декоратором TomatoPizza, а затем CheesePizza. И таких обертываний мы можем сделать множество. Просто достаточно унаследовать от декоратора класс, который будет определять дополнительный функционал.</span></p>
+<p class="rvps35"><span class="rvts43">А если бы мы использовали наследование, то в данном случае только для двух видов пицц с двумя добавками нам бы пришлось создать восемь различных классов, которые бы описывали все возможные комбинации. Поэтому декораторы являются более предпочтительным в данном случае методом.</span></p>
+<p class="rvps35"><span class="rvts43"><br/></span></p>
+<p class="rvps35"><span class="rvts43"><br/></span></p>
+<p></p>
+<p class="rvps8" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpndoc.com/help-authoring-tool">Free help authoring tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017  by Shaptala. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

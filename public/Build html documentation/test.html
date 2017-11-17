@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.4.0.395">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>тестирование</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="тестирование">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="тестирование" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Паттерны проектирования" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Паттерны проектирования</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="test"
+		  data-hnd-context="20"
+		  data-hnd-title="тестирование"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="sost.html" title="Состояние" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>тестирование</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6"><html>
+<body>
+<div class="container">
+  <input id="cv" type="hidden"/>
+  <div class="panel1">
+  <div class="vopr">  <button type="button" class="btn btn-sm btn-success" onclick="func1(1)">Начать тестирование</button> </div> <div class="cvopr"> </div>
+  </div>
+
+  <div class="question"> </div>
+
+  <div class="inner">
+     <input type="hidden" name="id" value="0"/>
+
+
+
+  </div>
+
+  <div class="panel">  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+
+
+//возвращает индексы выделенных checkbox
+function getValues() {
+    var list = null;
+    var res = [];
+
+ list = $("div").find( $(".ans:checked") );
+
+    list.each( function(ind, a) {
+        res[res.length] = parseInt(a.name);
+    });
+    return res;
+}
+
+
+function  GetResult(){
+
+
+ $('.container').empty();
+
+ $('.container').append('<h3> Результаты тестирования</h3>');
+
+
+ $.ajax({
+                url: "/api/getResult/",
+                type: "GET",
+                contentType: "application/json",
+                success: function (quest) {
+
+$.each(quest, function (index, q) {
+
+       $('.container').append('<p class="text-primary">'+q.question+'</p>');
+
+          $('.container').append('<p class= "bg-success">Правильные ответы:</p>');
+          $.each(q.a1, function (index, as1) {
+             $('.container').append('<p class="text-success">'+q.answers1[as1]+'</p>');
+
+             });
+        $('.container').append('<p class= "bg-info">Ваши ответы:</p>');
+          $.each(q.a2, function (index, as2) {
+            if (q.a1.indexOf(as2) == -1)
+                  $('.container').append('<p class="text-danger">'+q.answers1[as2]+'</p>')
+             else
+                  $('.container').append('<p class="text-success">'+q.answers1[as2]+'</p>');
+             });
+
+
+
+
+
+
+
+
+          $('.container').append('<br><br>');
+
+      })
+
+
+
+
+
+
+
+
+console.log(quest);
+
+}
+
+});
+
+}
+
+
+
+// взять ответ, отправить его и получить новый вопрос
+
+function func2()
+{
+
+
+  var res = getValues();
+
+
+
+  console.log(res);
+
+var  xx = document.getElementById("idii").value;
+xx = parseInt(xx);
+
+
+
+
+
+
+
+
+// отправить ответ
+postAnsver(xx,res);
+
+
+
+//xx = parseInt(xx);
+xx = xx +1;
+
+$('.question').empty();
+
+$('.inner').empty();
+
+
+
+
+//alert($('.cvopr').html());
+
+var  aa = document.getElementById("cv").value;
+aa = parseInt(aa);
+console.log("aa"+String(aa));
+console.log("xx"+String(xx));
+
+
+
+if (xx > aa)
+ {
+//если вопросов больше нет
+  GetResult();
+
+
+
+ }
+else
+{
+
+ if (xx == aa)
+{
+
+ func(xx);
+
+
+ $('#btn1').val("результаты");
+}
+
+
+
+// получить следующий вопрос
+
+
+
+}
+
+
+
+
+}
+
+
+// орпедел к-во вопросов и получаем первый вопрос
+function func1(num)
+{
+
+ $.ajax({
+                url: "/api/cntQw/",
+                type: "GET",
+                contentType: "application/json",
+                success: function (n) {
+
+
+
+ $("#cv").val(n);
+
+
+
+}
+}
+)
+
+
+func(num);
+
+var c = '<input type="button" class="btn btn-sm btn-primary"  value = "следующий" id = "btn1" onclick = "func2()"/>'
+
+$('.panel').append(c);
+
+}
+
+
+
+
+function postAnsver(q, ans)
+{
+
+console.log(ans);
+
+
+$.ajax({
+                url: "/api/res",
+                method: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    num: q,
+                    ansvers: ans
+                }),
+
+  success: function (res) {
+
+
+
+
+console.log(res);
+                }
+});
+}
+
+
+
+
+
+
+
+
+//получить новый вопрос
+
+
+function func(num)
+{
+
+
+//  var jsn = JSON.parse('{"num":1}');
+
+console.log(num);
+
+ $.ajax({
+                url: "/api/answer/"+ String(num),
+                type: "GET",
+                contentType: "application/json",
+                success: function (quest) {
+
+//var rows = "";
+
+
+
+ $('.vopr').empty();
+ $('.vopr').append('<h3>'+  num + ' вопрос из ' + document.getElementById("cv").value  +'</h3>');
+
+
+ var a = quest.question;
+
+
+
+
+$('.question').append('<h1>'+a+'</h1>');
+
+var b = '<form>';
+$('.inner').append(b);
+
+$('.inner').append('<input id="idii" type  = "hidden" />');
+
+//alert(quest.num);
+ document.getElementById("idii").value = num;
+
+
+
+var str;
+$.each(quest.answers1, function (index, ans) {
+
+console.log(index);
+metka = String(index);
+
+
+str1 = '<label class="checkbox"> <input type="checkbox" class = "ans" name =' +metka + ' id = "m' + metka + '"/>' + ans    +'</label> <br>';
+//str = ' <label for="m'+metka+'"><p class= "text-success">'+ ans + '</p></label>'+ '<br>';
+
+
+//  $('<input/>').attr({ type: 'checkbox', id: metka}).appendTo($('.inner'));
+//  str = '<label for= '+metka+'>'+ ans + '</label>'+ '<br>';
+
+//str1 = str1+str;
+$('.inner').append(str1);
+console.log(str1);
+
+
+ })
+
+b = '</form>';
+$('.inner').append(b);
+
+
+
+ }
+           } );
+
+
+
+
+
+
+}
+
+</script>
+
+
+
+
+
+
+
+</span></p>
+<p></p>
+<p class="rvps8" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017  by Shaptala. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.4.0.395">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Компоновщик</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Компоновщик">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Компоновщик" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Паттерны проектирования" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Паттерны проектирования</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Newtopic20"
+		  data-hnd-context="19"
+		  data-hnd-title="Компоновщик"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Newtopic3.html">Структурные паттерны</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Newtopic3.html" title="Структурные паттерны" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Newtopic19.html" title="Фасад" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Newtopic4.html" title="Поведенческие паттерны" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Компоновщик</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps35"><span class="rvts49">К</span><span class="rvts43">омпоновщик (Composite) объединяет группы объектов в древовидную структуру по принципу "часть-целое и позволяет клиенту одинаково работать как с отдельными объектами, так и с группой объектов.</span></p>
+<p class="rvps35"><span class="rvts43">Образно реализацию паттерна можно представить в виде меню, которое имеет различные пункты. Эти пункты могут содержать подменю, в которых, в свою очередь, также имеются пункты. То есть пункт меню служит с одной стороны частью меню, а с другой стороны еще одним меню. В итоге мы однообразно можем работать как с пунктом меню, так и со всем меню в целом.</span></p>
+<h3 class="rvps39"><span class="rvts0"><span class="rvts44">Когда использовать компоновщик?</span></span></h3>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps38"><span class="rvts43">Когда объекты должны быть реализованы в виде иерархической древовидной структуры</span></li>
+<li class="rvps38"><span class="rvts43">Когда клиенты единообразно должны управлять как целыми объектами, так и их составными частями. То есть целое и его части должны реализовать один и тот же интерфейс</span></li>
+</ul>
+<p class="rvps35"><span class="rvts43">С помощью UML шаблон компоновщик можно представить следующим образом:</span></p>
+<p class="rvps35"><img width="733" height="373" alt="" style="padding : 1px;" src="lib/Composite.png"></p>
+<p class="rvps35"><span class="rvts43"><br/></span></p>
+<h3 class="rvps39"><span class="rvts0"><span class="rvts44">Участники</span></span></h3>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps38"><span class="rvts45">Component</span><span class="rvts43">: определяет интерфейс для всех компонентов в древовидной структуре</span></li>
+<li class="rvps38"><span class="rvts45">Composite</span><span class="rvts43">: представляет компонент, который может содержать другие компоненты и реализует механизм для их добавления и удаления</span></li>
+<li class="rvps38"><span class="rvts45">Leaf</span><span class="rvts43">: представляет отдельный компонент, который не может содержать другие компоненты</span></li>
+<li class="rvps38"><span class="rvts45">Client</span><span class="rvts43">: клиент, который использует компоненты</span></li>
+</ul>
+<p class="rvps35"><span class="rvts43">Рассмотрим простейший пример. Допустим, нам надо создать объект файловой системы. Файловую систему составляют папки и файлы. Каждая папка также может включать в себя папки и файлы. То есть получается древовидная иерархическая структура, где с вложенными папками нам надо работать также, как и с папками, которые их содержат. Для реализации данной задачи и воспользуемся паттерном Компоновщик:</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Program</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Main(</span><span class="rvts28">string</span><span class="rvts30">[] args)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Component fileSystem = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Directory(</span><span class="rvts32">"Файловая система"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// определяем новый диск</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Component diskC = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Directory(</span><span class="rvts32">"Диск С"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// новые файлы</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Component pngFile = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">File(</span><span class="rvts32">"12345.png"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Component docxFile = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">File(</span><span class="rvts32">"Document.docx"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// добавляем файлы на диск С</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">diskC.Add(pngFile);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">diskC.Add(docxFile);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// добавляем диск С в файловую систему</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">fileSystem.Add(diskC);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// выводим все данные</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">fileSystem.Print();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// удаляем с диска С файл</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">diskC.Remove(pngFile);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// создаем новую папку</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Component docsFolder = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Directory(</span><span class="rvts32">"Мои Документы"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts47">// добавляем в нее файлы</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Component txtFile = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">File(</span><span class="rvts32">"readme.txt"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Component csFile = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">File(</span><span class="rvts32">"Program.cs"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">docsFolder.Add(txtFile);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">docsFolder.Add(csFile);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">diskC.Add(docsFolder);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">fileSystem.Print();</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.Read();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts28">abstract</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Component</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">protected</span><span class="rvts29"> </span><span class="rvts28">string</span><span class="rvts29"> </span><span class="rvts30">name;</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">Component(</span><span class="rvts28">string</span><span class="rvts29"> </span><span class="rvts30">name)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">this</span><span class="rvts30">.name = name;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">virtual</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Add(Component component){}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">virtual</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Remove(Component component) { }</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">virtual</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Print()</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(name);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Directory :Component</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">private</span><span class="rvts29"> </span><span class="rvts30">List&lt;Component&gt; components = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">List&lt;Component&gt;();</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">Directory(</span><span class="rvts28">string</span><span class="rvts29"> </span><span class="rvts30">name)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">: </span><span class="rvts28">base</span><span class="rvts30">(name)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">override</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Add(Component component)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">components.Add(component);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">override</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Remove(Component component)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">components.Remove(component);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">override</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Print()</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Узел "</span><span class="rvts29"> </span><span class="rvts30">+ name);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">Console.WriteLine(</span><span class="rvts32">"Подузлы:"</span><span class="rvts30">);</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">for</span><span class="rvts30">(</span><span class="rvts28">int</span><span class="rvts29"> </span><span class="rvts30">i=0; i&lt;components.Count;i++)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">components[i].Print();</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps36"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">File : Component</span></p>
+<p class="rvps36"><span class="rvts30">{</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">File(</span><span class="rvts28">string</span><span class="rvts29"> </span><span class="rvts30">name)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">: </span><span class="rvts28">base</span><span class="rvts30">(name)</span></p>
+<p class="rvps36"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts30">{}</span></p>
+<p class="rvps36"><span class="rvts30">}</span></p>
+<p class="rvps36"><span class="rvts30"><br/></span></p>
+<p class="rvps35"><span class="rvts43">В итоге подобная система обладает неплохой гибкостью: если мы захотим добавить новый вид компонентов, нам достаточно унаследовать новый класс от Component.</span></p>
+<p class="rvps35"><span class="rvts43">И также применяя компоновщик, мы легко можем обойти все узлы древовидной структуры.</span></p>
+<p></p>
+<p class="rvps8" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpndoc.com/help-authoring-tool">Full-featured multi-format Help generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017  by Shaptala. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
